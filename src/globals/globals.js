@@ -1,0 +1,4 @@
+const GRID_ITEM_HEIGHT = 40;
+const GRID_ITEM_WIDTH = 40;
+
+export { GRID_ITEM_HEIGHT, GRID_ITEM_WIDTH };

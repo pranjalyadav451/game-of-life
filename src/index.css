@@ -1,16 +1,70 @@
 /* css reset configuration */
 html {
-  box-sizing: border-box;
-  font-size: 62.5%;
+	box-sizing: border-box;
+	width: 100%;
+	font-size: 62.5%;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
 }
 body {
-  margin: 0;
-  padding: 0;
-  font-size: 1.6rem;
-  line-height: 1.5;
-  font-family: 'Roboto', sans-serif;
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+
+	align-items: center;
+	justify-content: center;
+
+	padding: 1rem;
+	font-size: 1.6rem;
+	line-height: 1.5;
+	font-family: "Roboto", sans-serif;
 }
-/* end of css reset configuration */
+#root {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+/* button styling */
+.btn {
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: transparent;
+	border: 2px solid #e74c3c;
+	border-radius: 0.6em;
+	color: #e74c3c;
+	cursor: pointer;
+	/* display: flex;	 */
+	align-self: center;
+	font-size: 2rem;
+	font-weight: 400;
+	line-height: 1;
+	margin-top: 20px;
+	/* padding: 1rem 2.4em; */
+
+	width: 12.5rem;
+	height: 5rem;
+
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	font-weight: 700;
+}
+#start-btn {
+	transition: box-shadow 150ms ease-in-out, color 150ms ease-in-out;
+}
+#start-btn:hover {
+	color: #fff;
+	box-shadow: 0 0 40px 40px #e74c3c inset;
+}
